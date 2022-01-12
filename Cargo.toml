@@ -1,6 +1,6 @@
 [package]
 name = "rust_lib_starter_sample"
-version = "0.0.1-beta.3"
+version = "0.0.1-beta.4"
 edition = "2018"
 description = "Library sample."
 license = "Apache-2.0"
