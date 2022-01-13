@@ -9,6 +9,6 @@ Specify dependency in your project's Cargo.toml.
     rust_lib_starter_sample = "0.0.2-beta.1"
 <!-- replace end -->
 
-https://crates.io/crates/rust_lib_starter_sample
+[Crate page](https://crates.io/crates/rust_lib_starter_sample)
 
-https://github.com/ruimo/rust_lib_starter_sample
+[GitHub](https://github.com/ruimo/rust_lib_starter_sample)
