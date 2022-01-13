@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "rust_lib_starter_sample"
-version = "0.0.2-beta.2"
+version = "0.0.2-beta.3"
