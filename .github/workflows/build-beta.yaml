@@ -16,7 +16,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: cargo plugin cache
+      id: cargo-plugin-cache
+      uses: actions/cache@v2
+      with:
+        path: ~/.cargo/bin/
+        key: ${{ runner.os }}-cargo-plugins
+    - name: install cargo plugin
+      if: steps.cargo-plugin-cache.outputs.cache-hit != 'true'
+      run: cargo install cargo-tarpaulin
     - name: Build
       run: cargo build --verbose
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo tarpaulin -v -o html
+    - name: Upload report
+      uses: actions/upload-artifact@v2
+      with:
+        name: Converage
+        path: tarpaulin-report.html
+    
