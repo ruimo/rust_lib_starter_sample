@@ -11,5 +11,5 @@ Specify dependency in your project's Cargo.toml.
 If you try beta release:
 
     [dependencies]
-    rust_lib_starter_sample = "0.0.1-beta.7"
+    rust_lib_starter_sample = "0.0.1"
 <!-- replace end -->
