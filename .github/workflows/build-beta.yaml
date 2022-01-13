@@ -21,7 +21,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ~/.cargo/bin/
-        key: ${{ runner.os }}-cargo-plugins
+        key: ${{ runner.os }}-cargo-tarpaulin
     - name: install cargo plugin
       if: steps.cargo-plugin-cache.outputs.cache-hit != 'true'
       run: cargo install cargo-tarpaulin
